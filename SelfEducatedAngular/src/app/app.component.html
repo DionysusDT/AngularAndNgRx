@@ -52,3 +52,22 @@
     </ng-template>
   </app-tab-panel>
 </app-tab-bs-group>
+
+////////////////////
+<br>
+////////////////////
+<br>
+<!-- {{currentDate | date}} -->
+<p>{{interval$ | async}}</p>
+<p>{{addr | formatAddress}}</p>
+<br>
+Full user list:
+<ul>
+  <li *ngFor="let user of users">{{user.name}} - {{user.age}}</li>
+</ul>
+<br>
+Adult user list:
+<ul>
+  <li *ngFor="let user of users | adult">{{user.name}} - {{user.age}}</li>
+</ul>
+<button (click)="addUser()">add user</button>

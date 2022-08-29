@@ -12,6 +12,8 @@ import { TabGroupComponent } from './DI angular/tab-group/tab-group.component';
 import { TabPanelComponent } from './DI angular/tab-panel/tab-panel.component';
 import { TabBsGroupComponent } from './DI angular/tab-bs-group/tab-bs-group.component';
 import { TabContentDirective } from './DI angular/tab-content.directive';
+import { FormatAddressPipe } from './pipes/format-address.pipe';
+import { AdultPipe } from './pipes/adult.pipe';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { TabContentDirective } from './DI angular/tab-content.directive';
     TabPanelComponent,
     TabBsGroupComponent,
     TabContentDirective,
+    FormatAddressPipe,
+    AdultPipe,
   ],
   imports: [
     BrowserModule,
