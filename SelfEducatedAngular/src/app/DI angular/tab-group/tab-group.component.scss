@@ -1,0 +1,11 @@
+.tab-headers{
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.tab-header-item{
+  margin-right: 0.5rem;
+  padding: 5px 10px;
+}
+.tab-header-item.active{
+  border: 1px solid red;
+}

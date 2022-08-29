@@ -1,0 +1,17 @@
+import { Component, Input, OnInit, TemplateRef } from '@angular/core';
+
+@Component({
+  selector: 'tabs',
+  templateUrl: './tabs.component.html',
+  styleUrls: ['./tabs.component.scss']
+})
+export class TabsComponent implements OnInit {
+
+  @Input() navs:string[] =[];
+  @Input() linkTemplate !: TemplateRef<any>;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
