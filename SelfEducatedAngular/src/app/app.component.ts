@@ -39,7 +39,7 @@ export class AppComponent {
       name: "Chau Tran",
       age: 29
     },
-    {
+    { 
       name: "Tuan Anh",
       age: 16
     }
@@ -51,5 +51,7 @@ export class AppComponent {
     // this.users = [...this.users, {name: 'new user', age: 18}]
     this.users.push({name: 'new user', age: 19})
   }
+
+
 }
 

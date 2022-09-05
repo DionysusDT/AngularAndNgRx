@@ -1,4 +1,4 @@
-
+<!--
 <button (click)="currentProcess=currentProcess+1">Bấm dzo tao +1</button>
 <app-process-bar></app-process-bar>
 <app-process-bar [process]="currentProcess" [backgroundColor]="'black'" ></app-process-bar>
@@ -22,8 +22,8 @@
   <app-tab-panel  title="Third tab">Third tab content</app-tab-panel>
   <app-tab-panel  title="Fourth tab">Fourth tab content</app-tab-panel>
 </app-tab-group> -->
-<button class="btn btn-primary" (click)="showTab4 = !showTab4">show Tab4</button>
-<app-tab-bs-group [(activeIndex)]="currentIndex">
+<!-- <button class="btn btn-primary" (click)="showTab4 = !showTab4">show Tab4</button> -->
+<!-- <app-tab-bs-group [(activeIndex)]="currentIndex">
   <app-tab-panel  title="First tab">
     <ng-template tabContent>
       First tab content
@@ -51,23 +51,41 @@
       <counter></counter>
     </ng-template>
   </app-tab-panel>
-</app-tab-bs-group>
+</app-tab-bs-group> -->
 
-////////////////////
+<!-- ////////////////////
 <br>
 ////////////////////
-<br>
+<br> -->
 <!-- {{currentDate | date}} -->
-<p>{{interval$ | async}}</p>
-<p>{{addr | formatAddress}}</p>
-<br>
-Full user list:
-<ul>
+<!-- <p>{{interval$ | async}}</p> -->
+<!-- <p>{{addr | formatAddress}}</p> -->
+<!-- <br> -->
+<!-- Full user list: -->
+<!-- <ul>
   <li *ngFor="let user of users">{{user.name}} - {{user.age}}</li>
-</ul>
-<br>
-Adult user list:
-<ul>
+</ul> -->
+<!-- <br> -->
+<!-- Adult user list: -->
+<!-- <ul>
   <li *ngFor="let user of users | adult">{{user.name}} - {{user.age}}</li>
+</ul> -->
+<!-- <button (click)="addUser()">add user</button> --> -->
+
+<!-- <ul class="nav nav-pills card-header-pills">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="detail">Detail</a>
+  </li>
+</ul> -->
+<ul>
+  <li>
+    <a routerLink="/" >Home</a>
+  </li>
+  <li>
+    <a routerLink="/articles" > Acticles</a>
+  </li>
 </ul>
-<button (click)="addUser()">add user</button>
+<router-outlet></router-outlet>

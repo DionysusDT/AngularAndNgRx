@@ -1,0 +1,25 @@
+<div id="wrapper">
+  <div [class.loading]="loading$ | async" id="shopping-list"
+  *ngIf="!(error$ | async);"
+  >
+    <div id="list">
+      <h2>Shopping List</h2>
+      <ul *ngIf="shoppingItems | async">
+        <li *ngFor="let shopping of shoppingItems | async" (click)="deleteItem(shopping.id)">
+          {{shopping.name}}
+        </li>
+      </ul>
+    </div>
+
+    <form (ngSubmit)="addItem()">
+      <input
+        type="text"
+        [(ngModel)]="newShoppingItem.name"
+        placeholder="Item"
+        name="itemName"
+      >
+      <button type="submit">Submit</button>
+    </form>
+
+  </div>
+</div>

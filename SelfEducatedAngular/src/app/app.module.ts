@@ -4,8 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProcessBarComponent } from './process-bar/process-bar.component';
-import { AuthorDetailsComponent } from './author-details/author-details.component';
-import { AuthorListComponent } from './author-list/author-list.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { CounterComponent } from './counter/counter.component';
 import { TabGroupComponent } from './DI angular/tab-group/tab-group.component';
@@ -14,14 +12,15 @@ import { TabBsGroupComponent } from './DI angular/tab-bs-group/tab-bs-group.comp
 import { TabContentDirective } from './DI angular/tab-content.directive';
 import { FormatAddressPipe } from './pipes/format-address.pipe';
 import { AdultPipe } from './pipes/adult.pipe';
+import { HomeComponent } from './home/home.component';
+import { ArticlesModule } from './articles/articles.module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProcessBarComponent,
-    AuthorDetailsComponent,
-    AuthorListComponent,
     TabsComponent,
     CounterComponent,
     TabGroupComponent,
@@ -30,10 +29,13 @@ import { AdultPipe } from './pipes/adult.pipe';
     TabContentDirective,
     FormatAddressPipe,
     AdultPipe,
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ArticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
