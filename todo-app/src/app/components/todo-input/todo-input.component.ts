@@ -21,7 +21,7 @@ export class TodoInputComponent implements OnInit {
   addTodo(){
     if(this.todoInput!.trim().length > 0){
       this.store.dispatch(actions.addTodoAction({
-        id:this.todos!.length,
+        id:this.todos!.length,  
         complete:false,
         title:this.todoInput!.trim()
       }))

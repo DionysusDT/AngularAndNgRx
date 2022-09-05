@@ -35,7 +35,6 @@ import { ArticlesModule } from './articles/articles.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ArticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

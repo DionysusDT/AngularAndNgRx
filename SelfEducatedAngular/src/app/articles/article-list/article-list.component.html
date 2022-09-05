@@ -3,5 +3,7 @@
     {{article.title}}
     <br>
     <a [routerLink]="['/articles', article.slug]" routerLinkActive="router-link-active" >Read more</a>
+    <br>
+    <a [routerLink]="['/articles',article.slug,'edit']">Edit</a>
   </li>
 </ul>
